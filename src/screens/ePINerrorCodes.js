@@ -1,0 +1,30 @@
+ePINerrorCodes = [
+{'101': 'Invalid merchant'},
+{'102': 'Your account is temporary closed'},
+{'103': 'Invalid IP address'},
+{'104': 'Invalid request format'},
+{'105': 'CardTypeSubCategoryCode is required'},
+{'106': 'BalanceTypeCode is required'},
+{'107': 'CurrencyCode is required'},
+{'108': 'Order Number is required'},
+{'200': 'Success'},
+{'300': 'Request require parameter'},
+{'400': 'Request require authorization'},
+{'401': 'The Token has expired'},
+{'402': 'Invalid CardTypeSubCategoryCode'},
+{'403': 'Request CardType is not available now (CardType means MPT, iTunes etc...)'},
+{'405': 'Request Card is not available now (Card means MPT-1000, iTune-5$ etc...)'},
+{'406': 'Invalid BalanceTypeCode'},
+{'407': 'Invalid CurrencyCode'},
+{'408': 'Invalid OrderNumber. Maximun characters is 50.'},
+{'409': 'OrderNumber is already existed.'},
+{'410': 'Invalid merchant balance(i.e. Request BalanceTypeCode and CurrencyCode of balance doesn’t exist)'},
+{'411': 'Invalid currency exchange(i.e. If we close Request CurrencyCode and Card Currency exchange)'},
+{'412': 'Balance is lower than request CardTypeSubCategoryCode amount'},
+{'413': 'Out of stock (e.g. MPT-1000 is out of stock)'},
+{'414': 'OrderNumber does not exist (only when you call the enquiry transaction API method)'},
+{'500': 'Unknown Error'},
+{'501': 'Server is busy'}
+]
+
+export default ePINerrorCodes;

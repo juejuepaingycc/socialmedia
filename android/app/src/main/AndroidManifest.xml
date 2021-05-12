@@ -1,0 +1,117 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.yht.hinthar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:usesCleartextTraffic="true" 
+      android:theme="@style/AppTheme"
+      android:launchMode="singleTask"
+      android:showWhenLocked="true"
+      android:networkSecurityConfig="@xml/network_security_config"
+    >
+
+      <service android:name="io.invertase.firebase.messaging.RNFirebaseBackgroundMessagingService" />
+      <service android:name="io.wazo.callkeep.VoiceConnectionService"
+        android:label="Wazo"
+        android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+        <intent-filter>
+            <action android:name="android.telecom.ConnectionService" />
+        </intent-filter>
+      </service>
+      <service android:name="io.wazo.callkeep.RNCallKeepBackgroundMessagingService" />
+      <service android:name="com.voximplant.foregroundservice.VIForegroundService"> </service>
+      <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+      </service>
+
+      <service
+            android:name="com.yht.hinthar.BGService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.yht.hinthar.BGEventService">
+        </service>
+
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDOJM4bdpX3wXWQyx1m5mkQCFohWn1S7pI"/>
+      <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+      <meta-data  android:name="com.dieam.reactnativepushnotification.notification_foreground"
+                    android:value="false"/>
+      <meta-data  android:name="com.dieam.reactnativepushnotification.notification_color"
+                    android:resource="@color/app_bg"/>
+      <meta-data android:name="com.google.firebase.messaging.default_notification_icon" 
+                    android:resource="@mipmap/noti_icon" /> 
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver">
+          <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+          </intent-filter>
+      </receiver>
+              <receiver
+            android:name="com.yht.hinthar.BootUpReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+      <activity
+        android:name=".SplashActivity"
+        android:theme="@style/SplashTheme"
+        android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:windowSoftInputMode="adjustPan"
+        android:launchMode="singleTask"
+        android:exported="true">
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest>

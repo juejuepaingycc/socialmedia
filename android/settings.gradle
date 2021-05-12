@@ -1,0 +1,41 @@
+rootProject.name = 'SocialNetwork'
+// include ':react-native-unstoppable-background-service'
+// project(':react-native-unstoppable-background-service').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-unstoppable-background-service/android')
+include ':react-native-background-job'
+project(':react-native-background-job').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-job/android')
+include ':@react-native-community_cameraroll'
+project(':@react-native-community_cameraroll').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/cameraroll/android')
+include ':react-native-view-shot'
+project(':react-native-view-shot').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-view-shot/android')
+include ':react-native-incall-manager'
+project(':react-native-incall-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-incall-manager/android')
+include ':react-native-geocoder'
+project(':react-native-geocoder').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geocoder/android')
+include ':react-native-share'
+project(':react-native-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share/android')
+include ':react-native-voximplant'
+project(':react-native-voximplant').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-voximplant/android')
+include ':react-native-restart'
+project(':react-native-restart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart/android')
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':rn-qr-generator'
+project(':rn-qr-generator').projectDir = new File(rootProject.projectDir, '../node_modules/rn-qr-generator/android')
+include ':rn-fetch-blob'
+project(':rn-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/rn-fetch-blob/android')
+include ':@voximplant_react-native-foreground-service'
+project(':@voximplant_react-native-foreground-service').projectDir = new File(rootProject.projectDir, '../node_modules/@voximplant/react-native-foreground-service/android')
+include ':react-native-contacts'
+project(':react-native-contacts').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-contacts/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':react-native-restart'
+project(':react-native-restart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart/android')
+include ':react-native-push-notification'
+project(':react-native-push-notification').projectDir = file('../node_modules/react-native-push-notification/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+includeUnimodulesProjects()
+include ':reactnativekeyboardinput'
+project(':reactnativekeyboardinput').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keyboard-input/lib/android')
+include ':app'

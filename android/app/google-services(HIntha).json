@@ -1,0 +1,80 @@
+{
+  "project_info": {
+    "project_number": "678682126785",
+    "firebase_url": "https://hintha-e9233.firebaseio.com",
+    "project_id": "hintha-e9233",
+    "storage_bucket": "hintha-e9233.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678682126785:android:2b6fb18e8ae22969e06740",
+        "android_client_info": {
+          "package_name": "com.yht.hinthar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678682126785-c7etfgoqvdu0gi733mek264kggab3m5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yht.hinthar",
+            "certificate_hash": "422807b1aeb3fcde3cb76fcd5a8a28f896b0fa25"
+          }
+        },
+        {
+          "client_id": "678682126785-4qifn49784qh6m3p5bll0p03lelcbbj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yht.hinthar",
+            "certificate_hash": "86f4fd5b511ddde2920eb65577578436e22988d5"
+          }
+        },
+        {
+          "client_id": "678682126785-afi9fisiuljb9qsvlgr1vtfqn7dl8fdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yht.hinthar",
+            "certificate_hash": "ed492b3038e9bf8911357d734960d5e087f97bdb"
+          }
+        },
+        {
+          "client_id": "678682126785-ul0jjenad0utun343motqaiapct1a2ib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yht.hinthar",
+            "certificate_hash": "5387020b60e0bde220c78b7847f41de0fa834a47"
+          }
+        },
+        {
+          "client_id": "678682126785-oh2tnnal5e2hchhk1lje7r1qcij1fvpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yht.hinthar",
+            "certificate_hash": "214caff8308e40563dc44dc7c65681874cc947c5"
+          }
+        },
+        {
+          "client_id": "678682126785-2k3bsutcr3iql29323hcp2n58msf12rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfN2rw5EV7ye_6dyGuk17NDUmJh0hykxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678682126785-2k3bsutcr3iql29323hcp2n58msf12rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

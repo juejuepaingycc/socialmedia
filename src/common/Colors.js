@@ -1,0 +1,42 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
+
+const Colors = {
+  Primery: '#2a323a',
+  PrimeryDark: '#252a30',
+  PrimeryLight: '#32404d',
+  Accent: '#A230ED',
+  WHITE: 'rgb(255, 255, 255)',
+  GREEN: 'rgb(59, 199, 44)',
+  BLUE: 'rgb(93, 114, 255)',
+  GRAY: '#707070',
+  BLACK: 'black',
+  TRANSPARENT: 'rgba(255,255,255,0)',
+  TRANSPARENT_WHITE1: 'rgba(255,255,255,0.1)',
+  TRANSPARENT_WHITE2: 'rgba(255,255,255,0.2)',
+  TRANSPARENT_WHITE2_5: 'rgba(255,255,255,0.25)',
+  TRANSPARENT_WHITE3: 'rgba(255,255,255,0.3)',
+  TRANSPARENT_WHITE5: 'rgba(255,255,255,0.5)',
+  TRANSPARENT_WHITE6: 'rgba(255,255,255,0.6)',
+  TRANSPARENT_WHITE8: 'rgba(255,255,255,0.8)',
+  BUTTON_BG: 'rgba(255,255,255,0.3)',
+  TRANSPARENT_TEXT: 'rgba(255,255,255,0.5)',
+  TRANSPARENT_BLACK: 'rgba(0,0,0,0)',
+  TRANSPARENT_BLACK1: 'rgba(0,0,0,0.1)',
+  TRANSPARENT_BLACK2: 'rgba(0,0,0,0.2)',
+  TRANSPARENT_BLACK3: 'rgba(0,0,0,0.3)',
+  TRANSPARENT_BLACK4: 'rgba(0,0,0,0.4)',
+  TRANSPARENT_BLACK5: 'rgba(0,0,0,0.5)',
+  TRANSPARENT_BLACK6: 'rgba(0,0,0,0.6)',
+  TRANSPARENT_BLACK7: 'rgba(0,0,0,0.7)',
+  TRANSPARENT_BLACK8: 'rgba(0,0,0,0.8)',
+  TRANSPARENT_BLACK9: 'rgba(0,0,0,0.9)',
+  TEXT_SHADOW: 'rgba(0,0,0,0.3)',
+  LIME: '#8AD835',
+  ERR_PINCODE: '#FF0000',
+  PROGRESSBAR_COLOR: 'rgb(160,249,255)',
+  BAR_COLOR: 'rgb(0,245,234)',
+  CANVAS_GRAY: '#EDE2F4',
+};
+
+export default Colors;

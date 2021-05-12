@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "540018452048",
+    "firebase_url": "https://socialnetwork2-28067.firebaseio.com",
+    "project_id": "socialnetwork2-28067",
+    "storage_bucket": "socialnetwork2-28067.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540018452048:android:d43ea0e9551f3ec2cc1355",
+        "android_client_info": {
+          "package_name": "com.yht.hinthar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540018452048-mua6j0oi8mko3icl10r2oqrg0cbsj9ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSfTJ22QmIrW-11ArYJ2AFqLHE_U9UHdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540018452048-mua6j0oi8mko3icl10r2oqrg0cbsj9ul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
